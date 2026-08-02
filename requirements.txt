@@ -1,4 +1,6 @@
-pandas
-matplotlib
-google-genai
-python-dotenv
+openai==2.48.0
+python-dotenv==1.2.2
+pandas==3.0.5
+numpy==2.5.1
+matplotlib==3.11.1
+requests==2.34.2
