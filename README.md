@@ -83,9 +83,9 @@ Each review includes:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/customer-feedback-dashboard.git
+git clone https://github.com/sarb-devs/feedback-intelligence.git
 
-cd customer-feedback-dashboard
+cd feedback-intelligence
 ```
 
 Install dependencies:
