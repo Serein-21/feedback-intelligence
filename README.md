@@ -2,8 +2,6 @@
 
 An AI-powered analytics dashboard that automatically analyzes customer reviews using Large Language Models (LLMs), classifies sentiment and topics, visualizes insights, and generates an executive summary.
 
-This project was developed as part of the **Python & AI Capstone Project**.
-
 ---
 
 ## 📌 Features
