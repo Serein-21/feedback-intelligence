@@ -9,13 +9,13 @@ def load_data(file_path):
     try:
         df = pd.read_csv(file_path)
 
-        print("✅ Dataset loaded successfully!")
+        print(" Dataset loaded successfully!")
         print(f"Total records: {len(df)}")
 
         return df
 
     except FileNotFoundError:
-        print("❌ Dataset file not found.")
+        print(" Dataset file not found.")
         return None
 
     except Exception as e:
