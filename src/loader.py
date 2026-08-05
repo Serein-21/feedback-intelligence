@@ -19,7 +19,7 @@ def load_data(file_path):
         return None
 
     except Exception as e:
-        print(f"❌ Error loading dataset: {e}")
+        print(f" Error loading dataset: {e}")
         return None
 
 
