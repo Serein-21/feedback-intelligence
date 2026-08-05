@@ -15,11 +15,11 @@ def load_data(file_path):
         return df
 
     except FileNotFoundError:
-        print("❌ Dataset file not found.")
+        print(" Dataset file not found.")
         return None
 
     except Exception as e:
-        print(f"❌ Error loading dataset: {e}")
+        print(f" Error loading dataset: {e}")
         return None
 
 
@@ -94,7 +94,7 @@ def clean_data(df):
     # Reset index
     df.reset_index(drop=True, inplace=True)
 
-    print("\n✅ Data cleaned successfully!")
+    print("\n Data cleaned successfully!")
     print(f"Remaining records: {len(df)}")
 
     return df
