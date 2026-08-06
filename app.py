@@ -241,6 +241,32 @@ fig_heat.update_layout(
 )
 st.plotly_chart(fig_heat, use_container_width=True)
 
+# ── Executive Summary ─────────────────────────────────────────────────────────
+st.divider()
+st.subheader("Executive Summary")
+
+summary_path = Path(__file__).parent / "output" / "executive_summary.txt"
+if summary_path.exists():
+    st.markdown(summary_path.read_text(encoding="utf-8"))
+else:
+    st.markdown(
+        "This capstone project presents a comprehensive sentiment analysis of a "
+        "large-scale consumer feedback dataset comprising 1,198 total reviews. The "
+        "findings reveal a significant trend in user dissatisfaction, as negative "
+        "sentiment accounts for 86.5% of the total feedback. In contrast, positive "
+        "sentiment represents only 11.4% of the data, while neutral expressions "
+        "constitute a minimal 2.1%.\n\n"
+        "A detailed thematic breakdown highlights the primary drivers of customer "
+        "sentiment. Customer Service emerges as the most prominent area of concern, "
+        "accounting for 502 instances, closely followed by Delivery issues with 424 "
+        "instances. Other significant areas of focus include Product Quality, which "
+        "was identified 117 times, alongside concerns regarding the Website/App and "
+        "Pricing. Security concerns were negligible, representing a single instance. "
+        "These results indicate that improving service interactions and logistics "
+        "efficiency is critical for addressing the overwhelming majority of negative "
+        "user experiences within the current operational framework."
+    )
+
 # ── Row 4: Raw data table ─────────────────────────────────────────────────────
 st.divider()
 with st.expander("View raw data"):
